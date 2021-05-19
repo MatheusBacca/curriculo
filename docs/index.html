@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <title>Curriculo Matheus Antunes Bacca</title>
+    <link rel="stylesheet" href="./css/curriculo.css">
+  </head>
+
+  <body>
+
+    <header class="header">
+
+      <ul class="menu direita">
+        <a href="#DP"><li>DADOS PESSOAIS</li></a>
+        <a href="#CP"><li>CONTATO PROFISSIONAL</li></a>
+        <a href="#S"><li>SUGESTÕES</li></a>
+      </ul>
+
+    </header>
+
+    <div>
+
+      <img class="foto-perfil" src="css/perfil.png" alt="Minha foto">
+
+    </div>
+
+      <header class="header">
+
+        <nav>
+
+          <ul class="menu">
+            <li>Nome: Matheus Antunes Bacca</li>
+            <li>E-mail: matheus11bacca@gmail.com</li>
+            <li>Telefone: (41)98481-9069</li>
+            <li><a href="https://www.linkedin.com/in/matheus-bacca-86b9071a4/" target="_black">Linkedin</a></li>
+            <li>Cidade: Curitiba-PR</li>
+            <li>Idade: 18 anos</li>
+          </ul>
+
+        </nav>
+
+      </header>
+
+      <p id="DP"></p>
+
+      <header class="dados">
+
+        <h1 class="DadosPessoais">DADOS PESSOAIS</h1>
+
+        <h2>Área de Atuação</h2>
+
+        <ul>
+          <li>Estudante de Ciência da Computação - Universidade Positivo</li>
+        </ul>
+
+        <h2>Formação</h2>
+
+        <ul>
+          <li>Ensino Médio - Curso Positivo(Curitiba/PR) - 2019</li>
+        </ul>
+
+        <ul>
+          <li>Graduação em Ciência da Computação - Universidade Positivo(Curitiba/PR) - 2020 (Em curso)</li>
+        </ul>
+
+        <h2>Cursos</h2>
+
+        <ul>
+          <li>Curso de Python Essêncial - Udemy (Em curso)</li>
+        </ul>
+
+        <h2>Hobbies</h2>
+
+        <ul>
+          <li>Gosto de fotografia</li>
+          <li>Gosto de jogar</li>
+          <li>Gosto de editar vídeos/fotos</li>
+        </ul>
+
+        <h2>Idiomas</h2>
+
+        <ul>
+          <li>Inglês Intermediário</li>
+        </ul>
+
+      </header>
+
+      <p id="CP"></p>
+
+      <header class="formulario">
+
+        <form class=""  target="_blank" action="enviar.html" method="post">
+
+          <h1>CONTATO PROFISSIONAL</h1>
+
+          <h1>SE INTERESSOU NO MEU CURRÍCULO?<br>ENTRE EM CONTATO COMIGO!</h1>
+
+          <div class="div">
+
+            <label for="nome">Nome da empresa: </label>
+
+            <input type="text" placeholder="Nome" name="" value="" required>
+
+          </div>
+
+          <div class="div">
+
+            <label for="contato">E-mail para contato: </label>
+
+            <input type="email" placeholder="E-mail" name="" value="" required>
+
+          </div>
+
+          <div class="div">
+
+            <label for="localidade">Em qual estado sua empresa se localiza: </label>
+
+            <select class="" name="" required>
+
+              <option value="SP">São Paulo</option>
+              <option selected="selected" value="PR">Paraná</option>
+              <option value="SC">Santa Catarina</option>
+              <option value="RS">Rio Grande do Sul</option>
+
+            </select>
+
+          </div>
+
+          <div class="div">
+
+            <label for="nome">Data de vizualização: </label>
+
+            <input type="date" name="Data" value="">
+
+          </div>
+
+          <div class="div">
+
+            <label for="experiencia">Preciso de experiência em alguma linguagem específica? </label>
+
+            <button class="botaoYN" type="button" onclick="document.getElementById('ocultoExp').style.display='none' ">NÃO</button>
+
+            <button class="botaoYN" type="button" onclick="document.getElementById('ocultoExp').style.display='block' ">SIM</button>
+
+          </div>
+
+          <textarea id="ocultoExp" idname="experiencia" placeholder="Se sim, me informe qual(is)!" rows="10" cols="80"></textarea>
+
+          <div class="div">
+
+            <label for="comentario">Deixe um comentário construtivo para mim! </label>
+
+          </div>
+
+            <textarea name="comentários" placeholder="Deixe aqui um comentário para mim!" rows="10" cols="80"></textarea>
+
+            <br>
+
+          <button class="botao submit" type="submit" name="button">ENVIAR</button>
+
+        </form>
+
+      </header>
+
+            <p id="S"></p>
+
+      <header class="sugestoes">
+
+        <h1>SUGESTÕES PARA MEU CURRÍCULO</h1>
+
+        <div class="div">
+
+          <label for="sugestao">Está sentindo falta de algo no meu currículo? </label>
+          <input type="radio" name="faltando" value="">
+          Sim
+          <input type="radio" name="faltando" value="">
+          Não
+
+        </div>
+
+        <div class="div">
+
+          <label for="sugestao">Se sim, o que? </label>
+          <input type="checkbox" name="" value="">
+          Cores
+          <input type="checkbox" name="" value="">
+          Formatação
+          <input type="checkbox" name="" value="">
+          Imagens
+          <input type="checkbox" name="" value="">
+          Interação
+          <input type="checkbox" name="" value="">
+          Outro
+
+        </div>
+
+        <textarea name="outro" placeholder="O que você sentiu falta? Me conte por aqui!" rows="10" cols="80"></textarea>
+
+      </header>
+
+      <footer class="credits">
+        <p>-- Escrito por: Matheus Antunes Bacca --</p>
+        <p>2021</p>
+      </footer>
+
+</html>
